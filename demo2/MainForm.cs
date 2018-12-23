@@ -60,7 +60,11 @@ namespace demo2
 	        string filename = Path.GetFileName(this.textBoxExcelPath.Text);
 	        
 	        ExcelUIA excel = new ExcelUIA(filename);
-	        excel.SetValue(cell, this.textBoxExcelValue.Text);
+	        if (excel.SetValue(cell, this.textBoxExcelValue.Text)) 
+	        {
+	        	MessageBox.Show(cell + "设置成功");
+	        }
+	        
 	        excel.Close();
 	        excel = null;
 		}
@@ -78,8 +82,14 @@ namespace demo2
 	        
 	        ExcelUIA excel = new ExcelUIA(filename);
 	        string value = "not found";
-	        excel.GetValue(cell, ref value);
+	        bool ret = excel.GetValue(cell, ref value);
 	        this.textBoxExcelValue.Text = value;
+	        
+	        if (ret)
+	        {
+	        	MessageBox.Show(cell + "读取成功: " + value);
+	        }
+	        
 	        excel.Close();
 	        excel = null;
 		}
