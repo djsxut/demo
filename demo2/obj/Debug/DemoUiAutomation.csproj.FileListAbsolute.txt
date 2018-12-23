@@ -1,0 +1,8 @@
+D:\demo2\bin\Debug\DemoUiAutomation.exe.config
+D:\demo2\bin\Debug\DemoUiAutomation.exe
+D:\demo2\bin\Debug\DemoUiAutomation.pdb
+D:\demo2\obj\Debug\DemoUiAutomation.csprojResolveAssemblyReference.cache
+D:\demo2\obj\Debug\demo2.MainForm.resources
+D:\demo2\obj\Debug\DemoUiAutomation.csproj.GenerateResource.Cache
+D:\demo2\obj\Debug\DemoUiAutomation.exe
+D:\demo2\obj\Debug\DemoUiAutomation.pdb
